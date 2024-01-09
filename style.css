@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+textarea {
+    padding: 20px;
+    height: 150px;
+}
+
+button {
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.btn,
+.btn1,
+.clear {
+    background: darkblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn1 {
+    background: blue;
+}
+
+.clear {
+    background: darkgreen;
+}
+
+.social {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.telegram {
+    padding: 9px 25px;
+    background-color: #219dd9;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+    .social {
+        right: 20px;
+        top: 12px;
+    }
+    .telegram {
+        margin-top: -10px;
+    }
+}
